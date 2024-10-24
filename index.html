@@ -14,10 +14,10 @@
 
         <!--nav bar -->
         <nav>
-            <a href="#section-home">home</a>
-            <a href="#section-profile">profile</a>
-            <a href="#section-portofolio">portofolio</a>
-            <a href="#section-message-us">message us</a>
+            <a href="#section-home">Home</a>
+            <a href="#section-profile">Profile</a>
+            <a href="#section-headquarter">Headquarter</a>
+            <a href="#section-message-us">Message Us</a>
         </nav>
     </header>
 
@@ -27,7 +27,7 @@
         <!--section home-->
         <section id="section-home">
             <header>
-                <h1>Hai user, Welcome to my web.</h1>
+                <h1>Hai <span id="namaPengguna">.........</span>, Welcome to my web.</h1>
             </header>
 
             <article>
@@ -38,7 +38,7 @@
             </article>
         </section>
 
-<hr>
+
 
         <!--section profile-->
         <section id="section-profile">
@@ -51,19 +51,22 @@
             </article>
         </section>
 
-<hr>
+
         <!--section portofolio-->
-        <section id="section-portofolio">
+        <section id="section-headquarter">
            <header>
-             <h1>Portofolio</h1>
+             <h1>Headquater</h1>
+             <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ducimus cum quod dolorem! Eius praesentium porro architecto mollitia assumenda dignissimos, accusamus labore doloremque voluptas corporis, autem at, quibusdam omnis nesciunt.</p>
            </header>
 
-           <article>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt deleniti, praesentium, cupiditate molestias saepe architecto et molestiae tempore quidem at odit consequuntur excepturi itaque, aliquid exercitationem dicta nemo rem est.</p>
+           <article class="image-head">
+             <div class="gambar1"></div>
+             <div class="gambar2"></div>
+             <div class="gambar3"></div>
            </article>
         </section>
 
-<hr>
+
         <!--section message us-->
         <section id="section-message-us">
            <header>
@@ -71,35 +74,50 @@
            </header>
 
            <div class="message-container">
-             <form action="">
+             <form class="form-input" id="forminput">
+                
                 <!--name input form-->
-                <label for="name-input">Nama :</label>
-                <input type="text">
+                <label>Nama <span class="span">:</span></label>
+                <input required type="text" class="inputname" id="inputname">
+<br>              
 
                 <!--dateofbirth input form-->
-                <label for="dateofbirth-input">Tanggal Lahir :</label>
-                <input type="date">
+                <label>Tanggal Lahir <span class="span">:</span></label>
+                <input required class="dateofbirth" type="date" id="dateofbirth">
 
+<br>
                 <!--gender input form-->
-                <label for="gender-input">Jenis Kelamin:</label>
-                <input type="radio" name="gender" id="male-gender" value="laki-laki">
-                <label for="male-gender">laki-laki</label>
-                <input type="radio" name="gender" id="female-gender" value="perempuan">
-                <label for="female-gender">perempuan</label>
+                <label for="">Jenis Kelamin <span class="span">:</span></label>
+                    <input required type="radio" name="gender" id="male-gender" value="laki-laki">laki-laki
+                    <input required type="radio" name="gender" id="female-gender" value="perempuan">perempuan
                 
+ <br>               
                 <!--message form-->
-                <label for="masseges">Pesan :</label>
-                <textarea name="messages" id="messages"></textarea>
-
+                <label for="messages" style="vertical-align: top;">Pesan <span class="span">:</span></label>
+                <textarea required name="messages" id="messages"></textarea>
+                
+<br>
                 <!--submit form-->
-                <input type="submit" name="submit" id="submit">
-             </form>
+                <button type="submit" id="submit">submit</button>
+            </form>
 
-             <div></div>
-           </div>
+            <div class="output-input">
+                <h4>Output</h4>
+                <p>Current Time: <span id="currentDate"></span>
+                    <span id="currentMonth"></span>
+                    <span id="currentYear"></span></p>
+                <p>Nama: <span id="namaUser"></span></p>
+                <p>Tanggal Lahir: <span id="tglUser"></span></p>
+                <p>Jenis Kelamin: <span id="jKelamin"></span> </p>
+                <p>Pesan: <span id="pesanUser"></span></p>
+            </div>
         </section>
 <hr>
     <!--copyright-->
-    <footer></footer>
+    <footer>
+        <p>&copy; 2024 Revou Mini Project Software Engineer - Muhammad Ardhika </p>
+    </footer>
+
+<script src="js\script.js"></script>
 </body>
 </html>

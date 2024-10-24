@@ -1,15 +1,23 @@
-body{
-    background-color: aquamarine;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+ 
+ *{
+    font-family: "Montserrat";
+ }
+html{
+    scroll-behavior: smooth;
 }
-
 .main-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    background-color: white;
-    border-radius: 40px;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 20px;
+    border-radius: 45px;
+    background-color: rgb(31, 233, 206);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo-icon{
@@ -26,19 +34,188 @@ nav{
 }
 
 nav>a{
-    border: 1px solid;
     padding: 5px;
-    border-radius: 20px;
     text-decoration: none;
-    color: black;
-    margin-left: 2px;
-    margin-right: 2px;
+    color: rgb(255, 255, 255);
+}
+
+header>h1{
+    margin-bottom: 8px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+article>p{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    text-align: center
 }
 
 .photo-banner{
-    border: 1px solid;
-    height: 300px;
-    background-image: url();
+    width: 360px;
+    background-image: url(../asset/download.jpeg);
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
+    padding: 190px;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* headquarter */
+.image-head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.gambar1{
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(../asset/download.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.gambar2{
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(../asset/download\ \(1\).jpeg);
+    background-size: cover;
+    background-position: right;
+}
+.gambar3{
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(../asset/Art\ of\ the\ Wind\ Rises.jpeg);
+    background-size: cover;
+    background-position: right;
+}
+
+/* rubah margin dan padding section */
+#section-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+#section-profile{
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+#section-headquarter{
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+#section-message-us{
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+
+/* space antara input dan output */
+.message-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* merubah isi form message us */
+.form-input{
+    margin-top: 51px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    height: 300px;
+    width: 400px;
+    align-content: center;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.1);
+}
+.span{
+    margin-right: 10px;
+}
+
+.inputname{
+    width: 198px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid;
+    padding: 3px;
+}
+
+.dateofbirth{
+    width: 198px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid;
+    padding: 3px;
+}
+#male-gender{
+    margin-bottom: 10px;
+}
+#female-gender{
+    margin-bottom: 10px;
+}
+
+#messages{
+    width: 250px;
+    height: 160px;
+    margin-left: 51px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+#submit{
+    width: 378px;
+    align-content: center;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    background-color: white;
+    border: 1px solid;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+/* merubah isi output messages us */
+.output-input{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    align-content: center;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+footer>p{
+    text-align: right;
 }
